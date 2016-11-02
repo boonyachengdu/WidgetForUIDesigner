@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>子衿购物-中国第一自主创业服务平台</title>
+		<style type="text/css">
+			.niuniu {
+				height: 100px;
+				width: 100%;
+			}
+			.left {
+				height: 60px;
+				width: 50%;
+				font: '楷体';
+				color: #FFFFFF;
+				background-color: #C0C0C0;
+				float: left;
+			}
+			.right {
+				height: 60px;
+				width: 50%;
+				font: '楷体';
+				color: #FFFFFF;
+				background-color:#D30000;
+				float: left;
+				position: relative;
+				float: right;
+			}
+			.tab {
+				height: 300px;
+				width: 100%;
+			}
+			.tab1 {
+				height: 400px;
+				width: 100%;
+				background-image: url(../img/woman.jpg);
+			}
+			.tab2 {
+				height: 400px;
+				width: 100%;
+				background-image: url(../img/man.jpg);
+				display: none;
+			}
+		</style>
+
+		<script src="../js/jquery-1.7.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+                 $("div.left").click(function(){
+                 	$("div.tab1").show();
+                 	$("div.tab2").hide();
+                 	$("div.left").css("background","#C0C0C0");
+                 	$("div.right").css("background","#D30000");
+                 });
+                 $("div.right").click(function(){
+                 	$("div.tab1").hide();
+                 	$("div.tab2").show();
+                 	$("div.left").css("background","#D30000");
+                 	$("div.right").css("background","#C0C0C0");
+                 });
+			});
+		</script>
+	</head>
+	<body>
+		<div class="niuniu">
+			<div class="left" align="center">
+				<h2>女装</h2>
+			</div>
+			<div class="right" align="center">
+				<h2>男装</h2>
+			</div>
+		</div>
+
+		<div class="tab">
+
+			<div id="tab1" class="tab1">
+				<table>
+					<thead>
+						<tr>
+							<th>内衣</th>
+							<th>外套</th>
+							<th>裤子</th>
+							<th>裙子</th>
+						</tr>
+						<tr>
+							<td>有钢圈</td>
+							<td>毛呢</td>
+							<td>牛仔</td>
+							<td>长裙</td>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div id="tab2" class="tab2">
+				<table>
+					<thead>
+						<tr>
+							<th>内衣</th>
+							<th>外套</th>
+							<th>裤子</th>
+							<th>鞋子</th>
+						</tr>
+						<tr>
+							<td>平角</td>
+							<td>毛呢</td>
+							<td>牛仔</td>
+							<td>马丁靴</td>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
