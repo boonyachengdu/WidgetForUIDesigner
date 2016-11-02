@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>jQuery tab标签列表 - 16素材网</title>
+	<link rel="stylesheet" href="../css/organictabs.css">
+	<script src='../js/jquery.min.js'></script>
+	<script src="../js/organictabs.jquery.js"></script>
+	<script>
+		$(function() {
+		
+			// Calling the plugin
+			$("#example-one").organicTabs();
+			$("#example-two").organicTabs({
+				"speed": 100,
+				"param": "tab"
+			});
+			
+		});
+	</script>
+</head>
+<body>
+<div id="page-wrap">
+	<h1>Organic Tabs</h1>
+	<p>The purpose of this demo is to show a tabbed area where the content in 
+	tabbed panels are of different heights. When we switch between tabs, the 
+	content below is gently moved up or down to accomodate.</p>	
+	<div id="example-one">
+		<ul class="nav">
+			<li class="nav-one"><a href="#featured" class="current">Featured</a></li>
+			<li class="nav-two"><a href="#core">Core</a></li>
+			<li class="nav-three"><a href="#jquerytuts">jQuery</a></li>
+			<li class="nav-four last"><a href="#classics">Classics</a></li>
+		</ul>
+		<div class="list-wrap">
+			<ul id="featured">
+				<li><a href="http://sc.chinaz.com/?perfect-full-page-background-image/">
+				Full Page Background Images</a></li>
+				<li><a href="http://sc.chinaz.com/">
+				Designing for WordPress</a></li>
+				<li><a href="http://sc.chinaz.com/?build-your-own-social-home/">
+				Build Your Own Social Home!</a></li>
+				<li><a href="http://sc.chinaz.com/?absolute-positioning-inside-relative-positioning/">
+				Absolute Positioning Inside Relative Positioning</a></li>
+				<li><a href="http://www.16sucai.com/?ie-css-bugs-thatll-get-you-every-time/">
+				IE CSS Bugs That&#39;ll Get You Every Time</a></li>
+				<li><a href="http://www.16sucai.com/">404 Best 
+				Practices</a></li>
+				<li><a href="http://www.16sucai.com/?date-display-with-sprites/">
+				Date Display with Sprites</a></li>
+			</ul>
+			<ul id="core" class="hide">
+				<li><a href="http://www.16sucai.com/?video-screencasts/58-html-css-the-very-basics/">
+				The VERY Basics of HTML &amp; CSS</a></li>
+				<li><a href="http://www.16sucai.com/?the-difference-between-id-and-class/">
+				Classes and IDs</a></li>
+				<li><a href="http://www.16sucai.com/?the-css-box-model/">The CSS 
+				Box Model</a></li>
+				<li><a href="http://www.16sucai.com/?all-about-floats/">All About 
+				Floats</a></li>
+				<li><a href="http://www.16sucai.com/?the-css-overflow-property/">
+				CSS Overflow Property</a></li>
+				<li><a href="http://www.16sucai.com/?css-font-size/">CSS Font Size 
+				- (px - em - % - pt - keyword)</a></li>
+				<li><a href="http://www.16sucai.com/?css-transparency-settings-for-all-broswers/">
+				CSS Transparency / Opacity</a></li>
+				<li><a href="http://www.16sucai.com/?css-sprites/">CSS Sprites</a></li>
+				<li><a href="http://www.16sucai.com/?nine-techniques-for-css-image-replacement/">
+				CSS Image Replacement</a></li>
+				<li><a href="http://www.16sucai.com/?what-is-vertical-align/">CSS 
+				Vertial Align</a></li>
+				<li><a href="http://www.16sucai.com/?the-css-overflow-property/">
+				The CSS Overflow Property</a></li>
+			</ul>
+			<ul id="jquerytuts" class="hide">
+				<li><a href="http://www.16sucai.com/?anythingslider-jquery-plugin/">
+				Anything Slider jQuery Plugin</a></li>
+				<li><a href="http://www.16sucai.com/?moving-boxes/">Moving Boxes</a></li>
+				<li><a href="http://www.16sucai.com/?simple-jquery-dropdowns/">
+				Simple jQuery Dropdowns</a></li>
+				<li><a href="http://www.16sucai.com/?creating-a-slick-auto-playing-featured-content-slider/">
+				Featured Content Slider</a></li>
+				<li><a href="http://www.16sucai.com/?startstop-slider/">Start/Stop 
+				Slider</a></li>
+				<li><a href="http://www.16sucai.com/?banner-code-displayer-thing/">
+				Banner Code Displayer Thing</a></li>
+				<li><a href="http://www.16sucai.com/?highlight-certain-number-of-characters/">
+				Highlight Certain Number of Characters</a></li>
+				<li><a href="http://www.16sucai.com/?auto-moving-parallax-background/">
+				Auto-Moving Parallax Background</a></li>
+				</ul>
+				<ul id="classics" class="hide">
+				<li><a href="http://www.16sucai.com/?css-wishlist/">Top Designers 
+				CSS Wishlist</a></li>
+				<li><a href="http://www.16sucai.com/?what-beautiful-html-code-looks-like/">
+				What Beautiful HTML Code Looks Like</a></li>
+				<li><a href="http://www.16sucai.com/?easily-password-protect-a-website-or-subdirectory/">
+				Easily Password Protect a Website or Subdirectory</a></li>
+				<li><a href="http://www.16sucai.com/?how-to-create-an-ie-only-stylesheet/">
+				IE-Only Stylesheets</a></li>
+				<li><a href="http://www.16sucai.com/?ecommerce-considerations/">
+				eCommerce Considerations</a></li>
+				<li><a href="http://www.16sucai.com/?php-for-beginners-building-your-first-simple-cms/">
+				PHP: Build Your First CMS</a></li>
+			</ul>
+		</div> <!-- END List Wrap -->
+	</div> <!-- END Organic Tabs (Example One) -->
+	<p>This is a plugin, so you can call it on multiple tabbed areas, which can 
+	be styled totally differently</p>
+	<div id="example-two">
+		<ul class="nav">
+			<li class="nav-one"><a href="#featured2" class="current">Featured</a></li>
+			<li class="nav-two"><a href="#core2">Core</a></li>
+			<li class="nav-three"><a href="#jquerytuts2">jQuery</a></li>
+			<li class="nav-four last"><a href="#classics2">Classics</a></li>
+		</ul>
+		<div class="list-wrap">
+		<ul id="featured2">
+			<li><a href="http://www.16sucai.com/?perfect-full-page-background-image/">
+			Full Page Background Images</a></li>
+			<li><a href="http://www.16sucai.com/">
+			Designing for WordPress</a></li>
+			<li><a href="http://www.16sucai.com/?build-your-own-social-home/">
+			Build Your Own Social Home!</a></li>
+			<li><a href="http://www.16sucai.com/?absolute-positioning-inside-relative-positioning/">
+			Absolute Positioning Inside Relative Positioning</a></li>
+			<li><a href="http://www.16sucai.com/?ie-css-bugs-thatll-get-you-every-time/">
+			IE CSS Bugs That&#39;ll Get You Every Time</a></li>
+			<li><a href="http://www.16sucai.com/">404 Best 
+			Practices</a></li>
+			<li><a href="http://www.16sucai.com/?date-display-with-sprites/">Date 
+			Display with Sprites</a></li>
+		</ul>
+		
+		<ul id="core2" class="hide">
+			<li><a href="http://www.16sucai.com/?video-screencasts/58-html-css-the-very-basics/">
+			The VERY Basics of HTML &amp; CSS</a></li>
+			<li><a href="http://www.16sucai.com/?the-difference-between-id-and-class/">
+			Classes and IDs</a></li>
+			<li><a href="http://www.16sucai.com/?the-css-box-model/">The CSS Box 
+			Model</a></li>
+			<li><a href="http://www.16sucai.com/?all-about-floats/">All About 
+			Floats</a></li>
+			<li><a href="http://www.16sucai.com/?the-css-overflow-property/">CSS 
+			Overflow Property</a></li>
+			<li><a href="http://www.16sucai.com/?css-font-size/">CSS Font Size - 
+			(px - em - % - pt - keyword)</a></li>
+			<li><a href="http://www.16sucai.com/?css-transparency-settings-for-all-broswers/">
+			CSS Transparency / Opacity</a></li>
+			<li><a href="http://www.16sucai.com/?css-sprites/">CSS Sprites</a></li>
+			<li><a href="http://www.16sucai.com/?nine-techniques-for-css-image-replacement/">
+			CSS Image Replacement</a></li>
+			<li><a href="http://www.16sucai.com/?what-is-vertical-align/">CSS 
+			Vertial Align</a></li>
+			<li><a href="http://www.16sucai.com/?the-css-overflow-property/">The 
+			CSS Overflow Property</a></li>
+		</ul>
+		
+		<ul id="jquerytuts2" class="hide">
+			<li><a href="http://www.16sucai.com/?anythingslider-jquery-plugin/">
+			Anything Slider jQuery Plugin</a></li>
+			<li><a href="http://www.16sucai.com/?moving-boxes/">Moving Boxes</a></li>
+			<li><a href="http://www.16sucai.com/?simple-jquery-dropdowns/">Simple 
+			jQuery Dropdowns</a></li>
+			<li><a href="http://www.16sucai.com/?creating-a-slick-auto-playing-featured-content-slider/">
+			Featured Content Slider</a></li>
+			<li><a href="http://www.16sucai.com/?startstop-slider/">Start/Stop 
+			Slider</a></li>
+			<li><a href="http://www.16sucai.com/?banner-code-displayer-thing/">
+			Banner Code Displayer Thing</a></li>
+			<li><a href="http://www.16sucai.com/?highlight-certain-number-of-characters/">
+			Highlight Certain Number of Characters</a></li>
+			<li><a href="http://www.16sucai.com/?auto-moving-parallax-background/">
+			Auto-Moving Parallax Background</a></li>
+		</ul>
+		
+		<ul id="classics2" class="hide">
+			<li><a href="http://www.16sucai.com/?css-wishlist/">Top Designers CSS 
+			Wishlist</a></li>
+			<li><a href="http://www.16sucai.com/?what-beautiful-html-code-looks-like/">
+			What Beautiful HTML Code Looks Like</a></li>
+			<li><a href="http://www.16sucai.com/?easily-password-protect-a-website-or-subdirectory/">
+			Easily Password Protect a Website or Subdirectory</a></li>
+			<li><a href="http://www.16sucai.com/?how-to-create-an-ie-only-stylesheet/">
+			IE-Only Stylesheets</a></li>
+			<li><a href="http://www.16sucai.com/?ecommerce-considerations/">
+			eCommerce Considerations</a></li>
+			<li><a href="http://www.16sucai.com/?php-for-beginners-building-your-first-simple-cms/">
+			PHP: Build Your First CMS</a></li>
+		</ul>
+		
+		</div> <!-- END List Wrap -->
+	
+	</div> <!-- END Organic Tabs (Example One) -->
+	
+	<p>This is some content below the tabs. I will be moved up or down to 
+	accommodate the tabbed area above me.</p>
+	
+	</div>
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.bsa_it_ad {
+		padding: 8px 4px 8px 12px !important;
+		position: relative;
+		border: 0 !important;
+		background: #D6D5D5 !important;
+		border-top: 0 !important;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	.bsa_it_ad:before, .bsa_it_ad:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #989898;
+		border-bottom: 6px solid #989898;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.bsa_it_ad:before {
+		top: 0;
+		left: 12px;
+		z-index: -2;
+		background: #6C6666;
+		border-bottom: 12px solid #6C6666;
+	}
+
+	.bsa_it_ad a {
+	  margin: 0 !important;
+		padding: 0 !important;
+	}
+	.bsa_it_ad a img {
+	  border: 0 !important;
+		position: static !important;
+	}
+	.bsa_it_ad a:hover img {
+		margin: 0 !important;
+	}
+	.bsa_it_ad a:hover {
+	  background: none !important;
+	}
+	.bsa_it_i {
+		margin: 0 15px 0 0 !important;
+	}
+	.bsa_it_t {
+		font-size: 14px !important;
+		margin: 12px 0 0 0 !important;
+	}
+	.bsa_it_d {
+		padding-right: 10px;
+	}
+	.bsa_it_p{
+		display: none !important;
+	}
+	#demo-bar-ad {
+		width: 416px;
+		position: absolute;
+		right: 0;
+		top: -20px;
+		font: 11px "Lucida Grande", Sans-Serif !important;
+	}
+	#bsap_aplink {
+		position: absolute;
+		color: #999;
+		text-decoration: none;
+		bottom: 8px !important;
+		right: 8px !important;
+		padding: 0 !important;
+	}
+	.bsa_it_p a:hover {
+		background:none !important;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #e18728;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		box-shadow: 0 0 10px black;
+		padding: 20px 0 15px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#demo-top-bar:before, #demo-top-bar:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 100%;
+		height: 100%;
+		background: #e18728;
+		border-bottom: 6px solid #8F5314;
+		z-index: -1;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	#demo-top-bar:before {
+		top: 0;
+		left: 12px;
+		background: #6C6666;
+		border-bottom: 12px solid #62390E;
+	}
+
+	#demo-bar-buttons {
+		display: inline-block;
+		width: 236px;
+		text-align: center;
+		vertical-align: top;
+		font-size: 0;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		color: white;
+		display: block;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		color: #333;
+	}
+
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+<div style="text-align:center;clear:both">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://www.16sucai.com/" target="_blank">16素材网</a></p>
+</div>
+</body>
+
+</html>
