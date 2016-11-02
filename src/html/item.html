@@ -8,12 +8,12 @@
 $(document).ready(function(){
    //鼠标的移入移出  
     $("div.container").mouseover(function (){  
-            $("div.botton").show();  
+            $("div.button").show();  
     }).mouseout(function (){  
-            $("div.botton").hide();  
+            $("div.button").hide();  
     });  
 
-    $("div.botton").click(function (){ alert("您点击了要购买的按钮!"); });
+    $("div.button").click(function (){ alert("您点击了要购买的按钮!"); });
 })
 </script>
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
 }
 
 
-.botton{
+.button{
   font-family:'楷体';
   font-size:14px;
   height:30px;
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 <body>
 	<div class="container" align="center">
-	      <div class="botton" align="center" >立即购买</div>
+	      <div class="button" align="center" >立即购买</div>
 	</div>    
 </body>
 </html>
