@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>子衿购物-中国第一自主创业服务平台</title>
+		<style type="text/css">
+			.buttons {
+				height: 100px;
+				width: 100%;
+			}
+			.button {
+				height: 60px;
+				width: 20%;
+				font: '楷体';
+				color: #FFFFFF;
+				background-color: #D30000;
+				float: left;
+				cursor:pointer;
+			}
+			
+			.tabs {
+				height: 300px;
+				width: 100%;
+			}
+			.tab {
+				height: 200px;
+				width: 100%;
+			}
+		</style>
+
+		<script src="../../js/jquery-1.7.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				// 添加Button
+				$("div.buttons").append(myButtons());
+				
+				// 添加Tabs
+				$("div.tabs").append(myTas());
+				
+				// 绑定tab的事件
+                 $("div.button").click(function(){
+                     var id=$(this).attr("id");
+					 var strs=id.split("_");
+					 var index=parseInt(strs[1]);
+					 for(var i=0;i<5;i++){
+						 if(index==i){
+							 // 当前点击button
+							 $("#btn_"+i).css("background","#CCC");
+							 // 显示当前tab
+							 $("#tab_"+i).css("display","block");
+						 }else{
+							 // 非当前点击button
+							 $("#btn_"+i).css("background","#D30000");
+							 // 隐藏非当前tab
+							 $("#tab_"+i).css("display","none");
+						 }
+					 }
+                 });
+                 
+			});
+			
+			// JS添加多个button
+			var myButtons=function(){
+				var button="";
+				for(var i=0;i<5;i++){
+				    if(i==2){
+						button+="<div id='btn_"+i+"' class='button' style='background-color:#CCC;' align='center'><h2>女装"+i+"</h2>     </div>";
+					}else{
+						button+="<div id='btn_"+i+"' class='button' style='background-color:#D30000;' align='center'><h2>女装"+i+"</h2>     </div>";
+					}
+				   
+				}
+				return button;
+		    }
+			
+			// JS添加多个Tab
+			var myTas=function(){
+				var tab="";
+				for(var i=0;i<5;i++){
+				 if(i==2){
+					 tab+="<div id='tab_"+i+"' class='tab' style='background-image: url(../tab/img/"+(i+1)+".jpg);'>Tab"+i+"</div>";
+				 }else{
+					 tab+="<div id='tab_"+i+"' class='tab' style='background-image: url(../tab/img/"+(i+1)+".jpg);display:none;'>Tab"+i+"</div>";
+				 }
+				 
+				}
+				return tab;
+		    }
+		</script>
+	</head>
+	<body>
+		<div class="buttons"></div>
+
+		<div class="tabs"></div>
+	</body>
+</html>
